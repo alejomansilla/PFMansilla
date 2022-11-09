@@ -1,0 +1,156 @@
+@import "variables";
+@import "footer";
+
+/* HOME */
+.Navbar {
+    background-color: $color-primario;
+    }
+    
+    .ofertas {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .ofertas_diseño {
+        color: $color-primario;
+    }
+    
+    .grid_ofertas {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        justify-content: center;
+        border-radius: 5px;
+        }
+    .grid_ofertas-item {
+        filter: grayscale(100%);
+        transition: all 0.7s;
+        border: none;
+        margin: 50px;
+    }
+    
+    .grid_ofertas-item:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+        transition: 0.7s;
+        border: none;
+    }
+    .titulos_home {
+        text-align: center;
+        color: $color-primario;
+        padding-bottom:15px;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        .grid_ofertas {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+    }
+    }
+    @media only screen and (min-width: 800px) {
+        .grid_ofertas {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+        }
+    }
+    @media only screen and (min-width: 1000px) {
+        .grid_ofertas {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+        }
+    }
+    /* TIENDA */
+    .titulos_tienda {
+        display: flex;
+        justify-content: center;
+        color: $color-primario;
+        padding: 30px;
+        text-align: center;
+    }
+    .grid_productos {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        padding: 50px;
+        gap: 10px;
+    }
+    @media only screen and (min-width: 600px) {
+        .grid_productos {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+    }
+    }
+    @media only screen and (min-width: 800px) {
+        .grid_productos {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+    }
+    }
+    @media only screen and (min-width: 1000px) {
+        .grid_productos {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+    }
+    }
+    
+    .grid_sectores {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        gap: 10px;
+    }
+    @media only screen and (min-width: 600px) {
+        .grid_sectores {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+            gap: 10px;
+    }
+    }
+    @media only screen and (min-width: 800px) {
+        .grid_sectores {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center;
+            gap: 10px;
+    }
+    }
+    @media only screen and (min-width: 1000px){
+        .grid_sectores {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            gap: 10px;
+    }
+    }
+    
+    /* NOSOTROS */
+    .textos_nosotros {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    /* UBICACION */
+    .maps {
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* CONTACTO */
+    .titulos_contacto {
+        color: $color-primario;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .contacto_instagram{
+        display: block;
+        text-align: center;
+        padding: 50px;
+    }
+    
