@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* FOOTER */
 footer {
   background-color: #be7f08;
@@ -6,66 +7,48 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .footer-section {
   padding: 8px;
   text-align: center;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 .pie-footer {
   text-align: left;
-  color: #fff;
-  font-size: 14px;
-  }
+  padding: 10px;
+}
 
 .logos {
   width: 100%;
   height: 100%;
-  text-align: center; }
-
-.navegacion-footer {
-  list-style: none;
-  text-align: start;
-  
+  text-align: center;
 }
-.titulos-footer {
-  font-size: 14px;
-  font-family: "Montserrat",Sans-serif;
-  font-weight: 600;
-  padding-top: 20px;
-  
-}
-.list-footer {
-  color: #fff;
-  font-size: 14px;
-  font-family: "Montserrat",Sans-serif;
-  padding-left: 0%;
-}
-
-.footer-icons {
-  color: #fff;
-}
-
-
 
 /* HOME */
-
 .ofertas {
   text-align: center;
-  margin-top: 50px; 
-  background-color:  rgba(178, 176, 173, 0.534);
+  margin-top: 50px;
+  background-color: rgba(178, 176, 173, 0.534);
+  width: 100%;
+  height: 150px;
+  padding-top: 25px;
 }
 
-.ofertas_diseño {
-  color: #be7f08; }
+.ofertas_diseño,
+.titulos_home {
+  color: #be7f08;
+}
 
 .grid_ofertas {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 10px;
-text-align: center;
+  text-align: center;
 }
+
 .grid_ofertas-items {
   border-radius: 10px;
   background-color: #fff;
@@ -77,50 +60,56 @@ text-align: center;
   border: none;
   margin: 40px;
   border-radius: 10px;
- }
+}
 
 .grid_ofertas-item:hover {
   filter: grayscale(0%);
   transform: scale(1.05);
   transition: 0.7s;
-  border: none; }
+  border: none;
+}
 
 .titulos_home {
   text-align: center;
-  color: #be7f08;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+}
 
 @media only screen and (min-width: 600px) {
   .grid_ofertas {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    justify-content: center; } }
+    justify-content: center;
+  }
+}
 
 @media only screen and (min-width: 800px) {
   .grid_ofertas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center; } }
+    justify-content: center;
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   .grid_ofertas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center; } }
+    justify-content: center;
+  }
+}
 
-    .home_boton-ofertas {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-      margin-bottom: 50px;
-    }
+.home_boton-ofertas {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
 
-    .banner {
-      background-color: rgba(178, 176, 173, 0.534);
-      padding: 20px;
-      margin-bottom: 10px;
-    }
-    
+.banner {
+  background-color: rgba(178, 176, 173, 0.534);
+  padding: 20px;
+  margin-bottom: 10px;
+}
 
 /* TIENDA */
 .titulos_tienda {
@@ -128,20 +117,23 @@ text-align: center;
   justify-content: center;
   color: #be7f08;
   padding: 20px;
-  text-align: center; }
+  text-align: center;
+}
 
 .grid_productos {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   text-align: center;
   padding: 20px;
-  gap: 10px; }
-
-  .grid_productos-items {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
+  gap: 10px;
 }
+
+.grid_productos-items {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
 .img-productos {
   border-radius: 10px;
 }
@@ -150,25 +142,31 @@ text-align: center;
   .grid_productos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    justify-content: center; } }
+    justify-content: center;
+  }
+}
 
 @media only screen and (min-width: 800px) {
   .grid_productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center; } }
+    justify-content: center;
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   .grid_productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center; } }
+    justify-content: center;
+  }
+}
 
 .grid_sectores {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   text-align: center;
-  gap: 10px; 
+  gap: 10px;
   margin-bottom: 50px;
 }
 
@@ -177,26 +175,33 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    gap: 10px; } }
+    gap: 10px;
+  }
+}
 
 @media only screen and (min-width: 800px) {
   .grid_sectores {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 10px; } }
+    gap: 10px;
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   .grid_sectores {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 10px; } }
+    gap: 10px;
+  }
+}
 
 /* NOSOTROS */
 .textos_nosotros {
   text-align: center;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 /* UBICACION */
 .maps {
@@ -211,18 +216,71 @@ text-align: center;
   color: #be7f08;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 .contacto_instagram {
   display: block;
   text-align: center;
-  padding: 50px; }
+  padding: 50px;
+}
 
 .background-footer {
   background-color: #be7f08;
   color: #fff;
 }
 
-  .background-color{
-    background-color: rgb(233, 233, 233);
-  }
+.background-color {
+  background-color: #e9e9e9;
+}
+
+/* FOOTER */
+footer {
+  background-color: #be7f08;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-section {
+  padding: 8px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.pie-footer {
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+}
+
+.logos {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.navegacion-footer {
+  list-style: none;
+  text-align: start;
+}
+
+.titulos-footer {
+  font-size: 14px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.list-footer {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Montserrat", Sans-serif;
+  padding-left: 0%;
+}
+
+.footer-icons {
+  color: #fff;
+}
